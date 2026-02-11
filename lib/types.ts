@@ -6,4 +6,5 @@ export type CompanyComp = {
   totalCompUsd: number
   sourceLabel: string
   sourceUrl: string
+  medianWorkerPayUsd: number
 }

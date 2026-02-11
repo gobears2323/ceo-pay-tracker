@@ -30,3 +30,13 @@ export function formatUsd2(amount: number) {
     maximumFractionDigits: 2
   }).format(amount)
 }
+export function earnedSoFarThisYear(totalCompUsd: number, now: Date = new Date()) {
+  const start = new Date(now.getFullYear(), 0, 1, 0, 0, 0, 0)
+  const elapsedSeconds = Math.max(0, (now.getTime() - start.getTime()) / 1000)
+
+  const secondsInYear =
+    (new Date(now.getFullYear() + 1, 0, 1).getTime() - start.getTime()) / 1000
+
+  return (totalCompUsd * elapsedSeconds) / secondsInYear
+}
+
