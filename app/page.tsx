@@ -14,10 +14,14 @@ export default function HomePage() {
   const [now, setNow] = useState(new Date())
   const [search, setSearch] = useState('')
   const [sector, setSector] = useState('All')
-  const [sortBy, setSortBy] = useState<SortKey>('comp')
+  const [sortBy, setSortBy] =
+    useState<SortKey>('comp')
 
   useEffect(() => {
-    const id = setInterval(() => setNow(new Date()), 100)
+    const id = setInterval(
+      () => setNow(new Date()),
+      100
+    )
     return () => clearInterval(id)
   }, [])
 
@@ -36,7 +40,9 @@ export default function HomePage() {
           .includes(search.toLowerCase())
       )
       .filter(c =>
-        sector === 'All' ? true : c.sector === sector
+        sector === 'All'
+          ? true
+          : c.sector === sector
       )
   }, [search, sector])
 
@@ -44,40 +50,50 @@ export default function HomePage() {
     const copy = [...filtered]
 
     if (sortBy === 'comp') {
-      copy.sort((a, b) =>
-        (b.totalCompUsd ?? 0) -
-        (a.totalCompUsd ?? 0)
+      copy.sort(
+        (a, b) =>
+          (b.totalCompUsd ?? 0) -
+          (a.totalCompUsd ?? 0)
       )
     }
 
     if (sortBy === 'ratio') {
-      copy.sort((a, b) =>
-        (b.payRatio ?? 0) -
-        (a.payRatio ?? 0)
+      copy.sort(
+        (a, b) =>
+          (b.payRatio ?? 0) -
+          (a.payRatio ?? 0)
       )
     }
 
     if (sortBy === 'marketCap') {
-      // placeholder logic for now
-      copy.sort((a, b) =>
-        a.companyName.localeCompare(b.companyName)
+      copy.sort(
+        (a, b) =>
+          b.marketCapUsd -
+          a.marketCapUsd
       )
     }
 
     return copy
   }, [filtered, sortBy])
 
-  const globalPps = sorted.reduce((sum, c) => {
-    if (!c.totalCompUsd || !c.fiscalYear)
-      return sum
-    return (
-      sum +
-      payPerSecond(
-        c.totalCompUsd,
-        c.fiscalYear
+  const globalPps = sorted.reduce(
+    (sum, c) => {
+      if (
+        !c.totalCompUsd ||
+        !c.fiscalYear
       )
-    )
-  }, 0)
+        return sum
+
+      return (
+        sum +
+        payPerSecond(
+          c.totalCompUsd,
+          c.fiscalYear
+        )
+      )
+    },
+    0
+  )
 
   const secondsSinceYearStart = (() => {
     const start = new Date(
@@ -85,17 +101,22 @@ export default function HomePage() {
       0,
       1
     ).getTime()
-    return (now.getTime() - start) / 1000
+    return (
+      (now.getTime() - start) /
+      1000
+    )
   })()
 
   const globalEarned =
-    globalPps * secondsSinceYearStart
+    globalPps *
+    secondsSinceYearStart
 
   return (
     <div
       style={{
         padding: 60,
-        backgroundColor: '#0b0f14',
+        backgroundColor:
+          '#0b0f14',
         color: '#ffffff',
         minHeight: '100vh',
         fontFamily:
@@ -128,7 +149,8 @@ export default function HomePage() {
           fontSize: 72,
           fontWeight: 900,
           color: '#00ff88',
-          transition: 'all 0.1s linear'
+          transition:
+            'all 0.1s linear'
         }}
       >
         {formatUsd(globalEarned)}
@@ -141,11 +163,11 @@ export default function HomePage() {
           color: '#ccc'
         }}
       >
-        {formatUsd(globalPps)} per second
-        · Updated live
+        {formatUsd(globalPps)} per
+        second · Updated live
       </div>
 
-      {/* FILTERS */}
+      {/* CONTROLS */}
       <div
         style={{
           marginTop: 50,
@@ -158,47 +180,66 @@ export default function HomePage() {
           placeholder="Search company"
           value={search}
           onChange={e =>
-            setSearch(e.target.value)
+            setSearch(
+              e.target.value
+            )
           }
           style={{
             padding: 12,
             fontSize: 16,
-            backgroundColor: '#111',
+            backgroundColor:
+              '#111',
             color: '#fff',
-            border: '1px solid #333'
+            border:
+              '1px solid #333'
           }}
         />
 
         <select
           value={sector}
           onChange={e =>
-            setSector(e.target.value)
+            setSector(
+              e.target.value
+            )
           }
           style={{
             padding: 12,
-            backgroundColor: '#111',
+            backgroundColor:
+              '#111',
             color: '#fff',
-            border: '1px solid #333'
+            border:
+              '1px solid #333'
           }}
         >
-          <option>All</option>
-          {uniqueSectors.map(s => (
-            <option key={s}>{s}</option>
-          ))}
+          <option>
+            All
+          </option>
+          {uniqueSectors.map(
+            s => (
+              <option
+                key={s}
+              >
+                {s}
+              </option>
+            )
+          )}
         </select>
 
         <select
           value={sortBy}
           onChange={e =>
             setSortBy(
-              e.target.value as SortKey
+              e.target
+                .value as SortKey
             )
           }
           style={{
             padding: 12,
-            backgroundColor: '#111',
+            backgroundColor:
+              '#111',
             color: '#fff',
-            border: '1px solid #333'
+            border:
+              '1px solid #333'
           }}
         >
           <option value="comp">
@@ -218,7 +259,8 @@ export default function HomePage() {
         style={{
           width: '100%',
           marginTop: 40,
-          borderCollapse: 'collapse'
+          borderCollapse:
+            'collapse'
         }}
       >
         <thead>
@@ -227,10 +269,21 @@ export default function HomePage() {
               color: '#888'
             }}
           >
-            <th align="left">Rank</th>
-            <th align="left">Company</th>
-            <th align="left">CEO</th>
-            <th align="left">Sector</th>
+            <th align="left">
+              Rank
+            </th>
+            <th align="left">
+              Company
+            </th>
+            <th align="left">
+              CEO
+            </th>
+            <th align="left">
+              Sector
+            </th>
+            <th align="left">
+              Market Cap
+            </th>
             <th align="left">
               Total Comp
             </th>
@@ -241,14 +294,18 @@ export default function HomePage() {
               Per Second
             </th>
             <th align="left">
-              Median Salary Time
+              Median Salary
+              Time
             </th>
           </tr>
         </thead>
 
         <tbody>
           {sorted.map(
-            (c, index) => {
+            (
+              c,
+              index
+            ) => {
               const pps =
                 c.totalCompUsd &&
                 c.fiscalYear
@@ -275,14 +332,17 @@ export default function HomePage() {
 
               return (
                 <tr
-                  key={c.ticker}
+                  key={
+                    c.ticker
+                  }
                   style={{
                     borderTop:
                       '1px solid #222'
                   }}
                 >
                   <td>
-                    {index + 1}
+                    {index +
+                      1}
                   </td>
 
                   <td>
@@ -295,7 +355,9 @@ export default function HomePage() {
                           'none'
                       }}
                     >
-                      {c.companyName}
+                      {
+                        c.companyName
+                      }
                     </Link>
                   </td>
 
@@ -305,6 +367,12 @@ export default function HomePage() {
 
                   <td>
                     {c.sector}
+                  </td>
+
+                  <td>
+                    {formatUsd(
+                      c.marketCapUsd
+                    )}
                   </td>
 
                   <td>
@@ -320,11 +388,16 @@ export default function HomePage() {
                         '#00ff88'
                     }}
                   >
-                    {c.payRatio}x
+                    {
+                      c.payRatio
+                    }
+                    x
                   </td>
 
                   <td>
-                    {formatUsd(pps)}
+                    {formatUsd(
+                      pps
+                    )}
                   </td>
 
                   <td>
@@ -340,5 +413,3 @@ export default function HomePage() {
     </div>
   )
 }
-
-

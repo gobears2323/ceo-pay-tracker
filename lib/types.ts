@@ -11,6 +11,8 @@ export interface CompanyComp {
   cik: string | null
   sector: string
 
+  marketCapUsd: number
+
   fiscalYear: number | null
   ceoName: string | null
   totalCompUsd: number | null
@@ -24,6 +26,7 @@ export interface CompanyComp {
   lastFiledDate: string | null
   quality: DataQuality
 }
+
 
 
 
