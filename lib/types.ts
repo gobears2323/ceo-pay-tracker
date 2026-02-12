@@ -1,10 +1,26 @@
-export type CompanyComp = {
+export type DataQuality =
+  | 'ok'
+  | 'missing_filing'
+  | 'parse_failed'
+  | 'partial'
+
+export interface CompanyComp {
   ticker: string
   companyName: string
-  ceoName: string
-  fiscalYear: number
-  totalCompUsd: number
+  cik: string
+  sector: string
+
+  fiscalYear: number | null
+  ceoName: string | null
+  totalCompUsd: number | null
+  medianWorkerPayUsd: number | null
+
+  payRatio: number | null
+
   sourceLabel: string
-  sourceUrl: string
-  medianWorkerPayUsd: number
+  sourceUrl: string | null
+
+  lastFiledDate: string | null
+  quality: DataQuality
 }
+
