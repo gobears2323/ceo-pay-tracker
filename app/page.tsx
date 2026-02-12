@@ -21,8 +21,8 @@ export default function HomePage() {
     )
   }, [search])
 
-  const sorted = [...filtered].sort((a, b) =>
-    (b.totalCompUsd ?? 0) - (a.totalCompUsd ?? 0)
+  const sorted = [...filtered].sort(
+    (a, b) => (b.totalCompUsd ?? 0) - (a.totalCompUsd ?? 0)
   )
 
   const globalPps = sorted.reduce((sum, c) => {
@@ -47,13 +47,13 @@ export default function HomePage() {
         fontFamily: 'Inter, sans-serif'
       }}
     >
+      {/* HERO */}
       <h1 style={{ fontSize: 52, fontWeight: 800 }}>
-        CEO Pay Per Second
+        CEO Pay Intelligence
       </h1>
 
       <div style={{ marginTop: 10, color: '#888' }}>
-        Top 100 by market cap · Generated{' '}
-        {new Date(dataMeta.generatedAt).toLocaleString()}
+        YTD CEO Compensation Across Top {sorted.length} Companies
       </div>
 
       <div
@@ -68,9 +68,10 @@ export default function HomePage() {
       </div>
 
       <div style={{ fontSize: 22, marginTop: 10, color: '#ccc' }}>
-        {formatUsd(globalPps)} per second
+        {formatUsd(globalPps)} per second (combined)
       </div>
 
+      {/* SEARCH */}
       <div style={{ marginTop: 50 }}>
         <input
           placeholder="Search company or ticker"
@@ -87,6 +88,7 @@ export default function HomePage() {
         />
       </div>
 
+      {/* TABLE */}
       <table
         style={{
           width: '100%',
@@ -96,17 +98,18 @@ export default function HomePage() {
       >
         <thead>
           <tr style={{ color: '#888' }}>
+            <th align="left">Rank</th>
             <th align="left">Company</th>
-            <th align="left">Ticker</th>
             <th align="left">CEO</th>
+            <th align="left">Sector</th>
             <th align="left">Total Comp</th>
-            <th align="left">Ratio</th>
+            <th align="left">Pay Ratio</th>
             <th align="left">Per Second</th>
           </tr>
         </thead>
 
         <tbody>
-          {sorted.map(c => {
+          {sorted.map((c, index) => {
             const pps =
               c.totalCompUsd && c.fiscalYear
                 ? payPerSecond(c.totalCompUsd, c.fiscalYear)
@@ -117,6 +120,8 @@ export default function HomePage() {
                 key={c.ticker}
                 style={{ borderTop: '1px solid #222' }}
               >
+                <td>{index + 1}</td>
+
                 <td>
                   <Link
                     href={`/company/${c.ticker}`}
@@ -128,12 +133,17 @@ export default function HomePage() {
                     {c.companyName}
                   </Link>
                 </td>
-                <td>{c.ticker}</td>
+
                 <td>{c.ceoName}</td>
+
+                <td>{c.sector}</td>
+
                 <td>{formatUsd(c.totalCompUsd || 0)}</td>
+
                 <td style={{ color: '#00ff88' }}>
                   {c.payRatio}x
                 </td>
+
                 <td>{pps ? formatUsd(pps) : '—'}</td>
               </tr>
             )
