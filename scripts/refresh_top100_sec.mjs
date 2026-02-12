@@ -12,7 +12,17 @@ const TOP_100 = [
   { ticker: 'BRK.B', companyName: 'Berkshire Hathaway', sector: 'Financials' },
   { ticker: 'TSLA', companyName: 'Tesla', sector: 'Automotive' },
   { ticker: 'LLY', companyName: 'Eli Lilly', sector: 'Healthcare' },
-  { ticker: 'JPM', companyName: 'JPMorgan Chase', sector: 'Financials' }
+  { ticker: 'JPM', companyName: 'JPMorgan Chase', sector: 'Financials' },
+  { ticker: 'V', companyName: 'Visa', sector: 'Financials' },
+  { ticker: 'UNH', companyName: 'UnitedHealth Group', sector: 'Healthcare' },
+  { ticker: 'XOM', companyName: 'ExxonMobil', sector: 'Energy' },
+  { ticker: 'MA', companyName: 'Mastercard', sector: 'Financials' },
+  { ticker: 'HD', companyName: 'Home Depot', sector: 'Consumer' },
+  { ticker: 'PG', companyName: 'Procter & Gamble', sector: 'Consumer' },
+  { ticker: 'COST', companyName: 'Costco', sector: 'Consumer' },
+  { ticker: 'AVGO', companyName: 'Broadcom', sector: 'Technology' },
+  { ticker: 'MRK', companyName: 'Merck', sector: 'Healthcare' },
+  { ticker: 'ABBV', companyName: 'AbbVie', sector: 'Healthcare' }
 ]
 
 async function main() {
@@ -25,9 +35,9 @@ async function main() {
     sector: c.sector,
     fiscalYear: 2024,
     ceoName: 'Pending SEC ingestion',
-    totalCompUsd: 20000000 + i * 3000000,
+    totalCompUsd: 10000000 + i * 2000000,
     medianWorkerPayUsd: 80000,
-    payRatio: Math.round((20000000 + i * 3000000) / 80000),
+    payRatio: Math.round((10000000 + i * 2000000) / 80000),
     sourceLabel: 'Pending SEC DEF 14A parse',
     sourceUrl: null,
     lastFiledDate: null,
@@ -51,4 +61,3 @@ export const companies: CompanyComp[] = ${JSON.stringify(companies, null, 2)}
 }
 
 main()
-
