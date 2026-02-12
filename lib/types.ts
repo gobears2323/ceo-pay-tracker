@@ -1,5 +1,6 @@
 export type DataQuality =
   | 'ok'
+  | 'pending'
   | 'missing_filing'
   | 'parse_failed'
   | 'partial'
@@ -7,7 +8,7 @@ export type DataQuality =
 export interface CompanyComp {
   ticker: string
   companyName: string
-  cik: string
+  cik: string | null
   sector: string
 
   fiscalYear: number | null
@@ -23,4 +24,7 @@ export interface CompanyComp {
   lastFiledDate: string | null
   quality: DataQuality
 }
+
+
+
 
