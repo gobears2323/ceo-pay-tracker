@@ -1,16 +1,23 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import Link from 'next/link'
+import { useEffect, useMemo, useState } from 'react'
 import { companies, dataMeta } from '../lib/data.generated'
 import { formatUsd, payPerSecond } from '../lib/pay'
 
 export default function HomePage() {
+  const [now, setNow] = useState(new Date())
   const [search, setSearch] = useState('')
+
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 100)
+    return () => clearInterval(id)
+  }, [])
 
   const filtered = useMemo(() => {
     return companies.filter(c =>
-      c.companyName.toLowerCase().includes(search.toLowerCase()) ||
-      c.ticker.toLowerCase().includes(search.toLowerCase())
+      (c.companyName || '').toLowerCase().includes(search.toLowerCase()) ||
+      (c.ticker || '').toLowerCase().includes(search.toLowerCase())
     )
   }, [search])
 
@@ -18,84 +25,121 @@ export default function HomePage() {
     (b.totalCompUsd ?? 0) - (a.totalCompUsd ?? 0)
   )
 
-  const totalComp = sorted.reduce((sum, c) =>
-    sum + (c.totalCompUsd ?? 0), 0
-  )
+  const globalPps = sorted.reduce((sum, c) => {
+    if (!c.totalCompUsd || !c.fiscalYear) return sum
+    return sum + payPerSecond(c.totalCompUsd, c.fiscalYear)
+  }, 0)
 
-  const totalPps = sorted.reduce((sum, c) =>
-    sum + (c.totalCompUsd && c.fiscalYear
-      ? payPerSecond(c.totalCompUsd, c.fiscalYear)
-      : 0),
-    0
-  )
+  const secondsSinceYearStart = (() => {
+    const start = new Date(now.getFullYear(), 0, 1).getTime()
+    return (now.getTime() - start) / 1000
+  })()
+
+  const globalEarned = globalPps * secondsSinceYearStart
 
   return (
-    <div style={{ padding: 60 }}>
-
-      <h1 style={{ fontSize: 48, fontWeight: 800 }}>
-        CEO Pay Intelligence
+    <div
+      style={{
+        padding: 60,
+        backgroundColor: '#0b0f14',
+        color: '#ffffff',
+        minHeight: '100vh',
+        fontFamily: 'Inter, sans-serif'
+      }}
+    >
+      <h1 style={{ fontSize: 52, fontWeight: 800 }}>
+        CEO Pay Per Second
       </h1>
 
       <div style={{ marginTop: 10, color: '#888' }}>
-        Generated: {dataMeta.generatedAt}
+        Top 100 by market cap · Generated{' '}
+        {new Date(dataMeta.generatedAt).toLocaleString()}
       </div>
 
-      <div style={{ marginTop: 40, fontSize: 32 }}>
-        Total CEO Compensation: {formatUsd(totalComp)}
+      <div
+        style={{
+          marginTop: 50,
+          fontSize: 64,
+          fontWeight: 900,
+          color: '#00ff88'
+        }}
+      >
+        {formatUsd(globalEarned)}
       </div>
 
-      <div style={{ fontSize: 24, marginTop: 10 }}>
-        Combined Per Second: {formatUsd(totalPps)}
+      <div style={{ fontSize: 22, marginTop: 10, color: '#ccc' }}>
+        {formatUsd(globalPps)} per second
       </div>
 
-      <div style={{ marginTop: 40 }}>
+      <div style={{ marginTop: 50 }}>
         <input
           placeholder="Search company or ticker"
           value={search}
           onChange={e => setSearch(e.target.value)}
           style={{
-            padding: 10,
-            width: 300,
-            fontSize: 16
+            padding: 12,
+            width: 320,
+            fontSize: 16,
+            backgroundColor: '#111',
+            color: '#fff',
+            border: '1px solid #333'
           }}
         />
       </div>
 
-      <table style={{ width: '100%', marginTop: 40 }}>
+      <table
+        style={{
+          width: '100%',
+          marginTop: 40,
+          borderCollapse: 'collapse'
+        }}
+      >
         <thead>
-          <tr>
+          <tr style={{ color: '#888' }}>
             <th align="left">Company</th>
             <th align="left">Ticker</th>
             <th align="left">CEO</th>
             <th align="left">Total Comp</th>
             <th align="left">Ratio</th>
+            <th align="left">Per Second</th>
           </tr>
         </thead>
 
         <tbody>
-          {sorted.map(c => (
-            <tr key={c.ticker}>
-              <td>{c.companyName}</td>
-              <td>{c.ticker}</td>
-              <td>{c.ceoName}</td>
-              <td>
-                {c.totalCompUsd
-                  ? formatUsd(c.totalCompUsd)
-                  : 'Unknown'}
-              </td>
-              <td>
-                {c.payRatio
-                  ? `${c.payRatio}x`
-                  : 'Unknown'}
-              </td>
-            </tr>
-          ))}
+          {sorted.map(c => {
+            const pps =
+              c.totalCompUsd && c.fiscalYear
+                ? payPerSecond(c.totalCompUsd, c.fiscalYear)
+                : null
+
+            return (
+              <tr
+                key={c.ticker}
+                style={{ borderTop: '1px solid #222' }}
+              >
+                <td>
+                  <Link
+                    href={`/company/${c.ticker}`}
+                    style={{
+                      color: '#00ff88',
+                      textDecoration: 'none'
+                    }}
+                  >
+                    {c.companyName}
+                  </Link>
+                </td>
+                <td>{c.ticker}</td>
+                <td>{c.ceoName}</td>
+                <td>{formatUsd(c.totalCompUsd || 0)}</td>
+                <td style={{ color: '#00ff88' }}>
+                  {c.payRatio}x
+                </td>
+                <td>{pps ? formatUsd(pps) : '—'}</td>
+              </tr>
+            )
+          })}
         </tbody>
       </table>
-
     </div>
   )
 }
-
-
-
