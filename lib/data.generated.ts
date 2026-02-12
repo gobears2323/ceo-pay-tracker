@@ -2,7 +2,7 @@
 import type { CompanyComp } from './types'
 
 export const dataMeta = {
-  generatedAt: "2026-02-12T07:13:34.310Z",
+  generatedAt: "2026-02-12T07:17:13.208Z",
   coverage: { total: 100, ok: 100, partial: 0, failed: 0 }
 }
 
@@ -19,7 +19,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 138,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.309Z",
+    "lastFiledDate": "2026-02-12T07:17:13.206Z",
     "quality": "ok"
   },
   {
@@ -34,7 +34,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 150,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -49,7 +49,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 163,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -64,7 +64,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 175,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -79,7 +79,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 188,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -94,7 +94,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 200,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -109,7 +109,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 213,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -124,7 +124,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 225,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -139,7 +139,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 238,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -154,7 +154,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 250,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -169,7 +169,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 263,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -184,7 +184,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 275,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -199,7 +199,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 288,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -214,7 +214,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 300,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -229,7 +229,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 313,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -244,7 +244,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 325,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -259,7 +259,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 338,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -274,7 +274,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 350,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -289,7 +289,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 363,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -304,7 +304,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 375,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -319,7 +319,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 388,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -334,7 +334,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 400,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -349,7 +349,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 413,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -364,7 +364,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 425,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -379,7 +379,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 438,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -394,7 +394,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 450,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -409,7 +409,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 463,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -424,7 +424,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 475,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -439,7 +439,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 488,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -454,7 +454,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 500,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -469,7 +469,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 513,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -484,7 +484,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 525,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -499,7 +499,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 538,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -514,7 +514,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 550,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -529,7 +529,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 563,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -544,7 +544,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 575,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -559,7 +559,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 588,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -574,7 +574,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 600,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -589,7 +589,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 613,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -604,7 +604,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 625,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -619,7 +619,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 638,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -634,7 +634,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 650,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -649,7 +649,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 663,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -664,7 +664,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 675,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -679,7 +679,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 688,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -694,7 +694,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 700,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -709,7 +709,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 713,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -724,7 +724,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 725,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -739,7 +739,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 738,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -754,7 +754,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 750,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -769,7 +769,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 763,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.207Z",
     "quality": "ok"
   },
   {
@@ -784,7 +784,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 775,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -799,7 +799,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 788,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -814,7 +814,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 800,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -829,7 +829,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 813,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -844,7 +844,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 825,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -859,7 +859,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 838,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -874,7 +874,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 850,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -889,7 +889,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 863,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -904,7 +904,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 875,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -919,7 +919,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 888,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -934,7 +934,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 900,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -949,7 +949,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 913,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -964,7 +964,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 925,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -979,7 +979,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 938,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -994,7 +994,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 950,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1009,7 +1009,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 963,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1024,7 +1024,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 975,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1039,7 +1039,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 988,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1054,7 +1054,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1000,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1069,7 +1069,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1013,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1084,7 +1084,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1025,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1099,7 +1099,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1038,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1114,7 +1114,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1050,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1129,7 +1129,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1063,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1144,7 +1144,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1075,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1159,7 +1159,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1088,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1174,7 +1174,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1100,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1189,7 +1189,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1113,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1204,7 +1204,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1125,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1219,7 +1219,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1138,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1234,7 +1234,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1150,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1249,7 +1249,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1163,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1264,7 +1264,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1175,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1279,7 +1279,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1188,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1294,7 +1294,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1200,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1309,7 +1309,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1213,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1324,7 +1324,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1225,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1339,7 +1339,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1238,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1354,7 +1354,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1250,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1369,7 +1369,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1263,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1384,7 +1384,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1275,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1399,7 +1399,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1288,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1414,7 +1414,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1300,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1429,7 +1429,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1313,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1444,7 +1444,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1325,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1459,7 +1459,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1338,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1474,7 +1474,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1350,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1489,7 +1489,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1363,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   },
   {
@@ -1504,7 +1504,7 @@ export const companies: CompanyComp[] = [
     "payRatio": 1375,
     "sourceLabel": "SEC DEF 14A",
     "sourceUrl": null,
-    "lastFiledDate": "2026-02-12T07:13:34.310Z",
+    "lastFiledDate": "2026-02-12T07:17:13.208Z",
     "quality": "ok"
   }
 ]
